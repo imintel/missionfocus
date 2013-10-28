@@ -1,0 +1,5 @@
+name: Mission Focus
+markdown: redcarpet
+pygments: true
+permalink: date
+relative_permalinks: true

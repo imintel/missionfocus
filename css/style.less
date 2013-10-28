@@ -1,31 +1,40 @@
+---
+---
+
+// Variable Declarations
 @white: #f4f4f4;
-
-@red: red;
-
+@blue: rgb(51, 181, 204);
 @bodyCopy: #2d2c2d;
+@near-black: #545454;
 
-@largeType: 22px;
 
-@mediumType: 16px;
+// Type Variable Declarations
 
+// Sizes
 @smallType: 14px;
-
+@mediumType: 16px;
+@largeType: 22px;
+@lineHeightSmall: 24px;
 @lineHeight: 31px;
 
-@lineHeightSmall: 24px;
 
+// Faces
 @sansSerif: "proxima-nova", sans-serif;
-
 @serif: "ff-tisa-web-pro", serif;
 
-@black: #545454;
 
-@blue: rgb(51, 181, 204);
 
-* {
-  margin: 0;
+
+// General Page Styles
+html, body {
+  background-color: @white;
+  font-size: @mediumType;
+  font-family: @serif;
+  color: @bodyCopy;
+  height: 100%;
 }
 
+// General Wrapper 
 .wrapper {
   min-height: 100%;
   /* equal to footer height */
@@ -38,15 +47,6 @@
 footer, .wrapper:after {
   /* .push must be the same height as footer */
   height: 100px; 
-}
-
-
-html, body {
-	background-color: @white;
-  font-size: @mediumType;
-  font-family: @serif;
-  color: @black;
-  height: 100%;
 }
 
 table {
@@ -147,7 +147,7 @@ textarea {
   }
   span {
     font-size: @smallType;
-    color: lighten(@black, 40%);
+    color: lighten(@near-black, 40%);
   }
   .col-md-10 {
     padding-left: 0;
@@ -241,7 +241,7 @@ nav {
   display: none;
   width: 100%;
   top: 0;
-  background-color: @black;
+  background-color: @near-black;
   color: @white;
   list-style-type: none;
   margin: 0;

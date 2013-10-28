@@ -1,5 +1,10 @@
-* {
-  margin: 0;
+html,
+body {
+  background-color: #f4f4f4;
+  font-size: 16px;
+  font-family: "ff-tisa-web-pro", serif;
+  color: #2d2c2d;
+  height: 100%;
 }
 .wrapper {
   min-height: 100%;
@@ -16,14 +21,6 @@ footer,
   /* .push must be the same height as footer */
 
   height: 100px;
-}
-html,
-body {
-  background-color: #f4f4f4;
-  font-size: 16px;
-  font-family: "ff-tisa-web-pro", serif;
-  color: #545454;
-  height: 100%;
 }
 table {
   width: 100%;

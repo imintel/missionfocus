@@ -36,3 +36,6 @@ The ```_plugins``` directory holds any converters the compiler might need (such 
 The ```_site``` directory holds the compiled site.
 
 The ```_includes``` holds assets such as external libraries.
+
+## LESS Compiler
+In the event of troubleshooting, the ticks necessary for the Jekyll plugin will break the vanilla LESS compiler. Thus, if you need to compile the style.less stylesheet manually, you will need to delete/comment out the dashes at the top of the file that tell the Jekyll plugin to compile the file. 

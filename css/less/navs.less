@@ -1,0 +1,50 @@
+
+nav {
+  .nav(8, @bg, @bodyCopy);
+  clear: both;
+  color: black;
+  font-size: @smallType;
+  font-family: @sansSerif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  @media (max-width: 500px) {
+    cursor: pointer;
+    z-index: 50000;
+    background: url("/img/post_nav.png") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: -15px;
+    left: 75%;
+    ul {
+      display: none;
+    }
+}
+}
+
+.mobile {
+  display: none;
+  width: 100%;
+  top: 0;
+  background-color: @grayDark;
+  color: @bg;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  li {
+    border-bottom: 1px solid darken(@bg, 50%);
+    padding: 20px;
+  }
+  a {
+    color: @bg;
+    &:last-child {
+    li {
+      border-bottom: 0px;
+    }
+  }
+  }
+}

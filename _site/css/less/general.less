@@ -12,6 +12,46 @@ p {
   font-family: @serif;
 }
 
+
+p {
+  line-height: @lineHeight;
+  &.jumbotron {
+    margin-bottom: 15px;
+  }
+}
+
+
+.modules {
+  img{
+    -webkit-filter: grayscale(50%);
+    -webkit-transition: -webkit-filter 250ms; 
+    &:hover {
+      -webkit-filter: grayscale(0%);
+    }
+  }
+}
+
+.col-lg-4 {
+  padding-right: 20px;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:nth-child(2) {
+    padding-right: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+section {
+  img {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+
 // For software positions. Refactor DOM?
 table {
   width: 100%;
@@ -42,6 +82,23 @@ footer {
   padding-top: 15px;
 }
 
+.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -95.5px;
+  margin-top: 2%;
+  display: block;
+}
+
+// So that the logo displays correctly
+.container {
+  padding-top: 215px;
+}
+
+svg {
+  width: 150px;
+  height: 150px; 
+}
 
 /*
  * style.less created on June 11, 2013 H. V. Holmes <hvholmes@missionfocus.com>

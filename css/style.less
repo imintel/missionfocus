@@ -1,124 +1,24 @@
 ---
 ---
-@import "/css/less/bootstrap.less";
-@import "/css/less/general.less";
+
+// Tracker File
+// --------------------------
+// Media-query styling all in relevant files,
+// not extrapolated out separately.
+
+// Utilities
 @import "/css/less/mixins.less";
-@import "/css/less/navs.less";
 @import "/css/less/variables.less";
 
-
+// Compiled Bootstrap code with resets and libraries
+@import "/css/less/bootstrap.less";
+@import "/css/less/lib/picturefill.less";
 @import "/css/less/lib/responsive-slide.less";
 
+// Site-Specific Styles
+// --------------------------
+@import "/css/less/general.less";
+@import "/css/less/navs.less";
 
-
-
-// Blog Page
-// -------------------------
-// Handles the ul of different posts on the page
-.posts {
-  li {
-    line-height: @lineHeight;
-  }
-  p {
-    line-height: @lineHeightSmall;
-  }
-  span {
-    font-size: @smallType;
-    color: @grayDark;
-  }
-  .col-md-10 {
-    padding-left: 0;
-  }
-}
-// Styling for each individual blog entry
-.post {
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-  img {
-    margin-top: 5px;
-  }
-}
-
-
-// Picturefill markup
-.picture .sml img { /* Styles for the small image */ }
-
-.picture .med img { /* Styles for the medium image */ }
-
-.picture .lrg img { /* Styles for the large image */ }
-
-.logo {
-  position: absolute;
-  left: 50%;
-  margin-left: -95.5px;
-  margin-top: 2%;
-  display: block;
-}
-
-// So that the logo displays correctly
-.container {
-  padding-top: 215px;
-}
-
-svg {
-  width: 150px;
-  height: 150px; 
-}
-
-.wrapper {
-  // position: absolute;
-}
-
-p {
-  line-height: @lineHeight;
-  &.jumbotron {
-    margin-bottom: 15px;
-  }
-}
-
-
-.posts {
-	padding-left: 2px;
-	li {
-		list-style-type: none;
-	}
-  p {
-    font-size: @mediumType;
-  }
-}
-
-.posts {
-  margin: 0;
-}
-
-.modules {
-  img{
-    -webkit-filter: grayscale(50%);
-    -webkit-transition: -webkit-filter 250ms; 
-    &:hover {
-      -webkit-filter: grayscale(0%);
-    }
-  }
-}
-
-.col-lg-4 {
-  padding-right: 20px;
-  &:first-child {
-    padding-left: 0;
-  }
-  &:nth-child(2) {
-    padding-right: 0;
-  }
-  &:last-child {
-    padding-right: 0;
-  }
-}
-
-section {
-  img {
-    float: left;
-    margin-right: 20px;
-  }
-}
-
+// Site-Specific Styles (Pages)
+@import "/css/less/blog.less";

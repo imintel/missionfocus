@@ -1,15 +1,39 @@
 ---
 ---
 
-// Variable Declarations
-@white: #f4f4f4;
-@blue: rgb(51, 181, 204);
-@bodyCopy: #2d2c2d;
-@near-black: #545454;
+// State colors
+// -------------------------
+@bg:                    #f4f4f4;
+@danger:                #d43f1c;
+@warning:               #d4631c;
+@error:                 #faaa44;
+@success:               #62c462;
+
+// Brand colors
+// -------------------------
+@primary:               #33b5cc;
+@info:                  #6F868F;
+
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+
+// Transparencies for browsers that support it
+// -------------------------
+@white25:               rgba(255, 255, 255, 0.25);
+@white40:               rgba(255, 255, 255,  0.4);
+@white50:               rgba(255, 255, 255,  0.5);
+@white75:               rgba(255, 255, 255, 0.25);
 
 
 // Type Variable Declarations
-
+// -------------------------
 // Sizes
 @smallType: 14px;
 @mediumType: 16px;
@@ -17,61 +41,89 @@
 @lineHeightSmall: 24px;
 @lineHeight: 31px;
 
-
 // Faces
 @sansSerif: "proxima-nova", sans-serif;
 @serif: "ff-tisa-web-pro", serif;
 
+// Colors
+@bodyCopy: @grayDarker;
 
+// Mixins
+// -------------------------
+.f-left {
+  float: left;
+}
 
+.clear {
+  clear: both;
+}
 
 // General Page Styles
+// -------------------------
 html, body {
-  background-color: @white;
+  background-color: @bg;
   font-size: @mediumType;
   font-family: @serif;
   color: @bodyCopy;
-  height: 100%;
 }
 
-// General Wrapper 
-.wrapper {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -100px; 
-}
-.wrapper:after {
-  content: "";
-  display: block;
-}
-footer, .wrapper:after {
-  /* .push must be the same height as footer */
-  height: 100px; 
+p {
+  font-size: @smallType;
+  font-family: @serif;
 }
 
+// For software positions. Refactor DOM?
 table {
   width: 100%;
   tr {
     width: 100%;
   }
   td {
-    border: 1px solid darken(@white, 10%);
+    border: 1px solid darken(@bg, 10%);
     padding: 10px;
   }
 }
 
+// Contact forms
 textarea {
   width: 100%;
 }
 
+// Navigation
+// -------------------------
+
+
+// Blog Page
+// -------------------------
+// Handles the ul of different posts on the page
+.posts {
+  li {
+    line-height: @lineHeight;
+  }
+  p {
+    line-height: @lineHeightSmall;
+  }
+  span {
+    font-size: @smallType;
+    color: @grayDark;
+  }
+  .col-md-10 {
+    padding-left: 0;
+  }
+}
+// Styling for each individual blog entry
 .post {
   height: 200px;
   position: relative;
+  overflow: hidden;
   img {
     margin-top: 5px;
   }
 }
 
+
+// Individual Blog Post Page
+// -------------------------
 #post {
   .logo {
     opacity: 0.4;
@@ -138,42 +190,18 @@ textarea {
   }
 }
 
-.posts {
-  li {
-    line-height: @lineHeight;
-  }
-  p {
-    line-height: @lineHeightSmall;
-  }
-  span {
-    font-size: @smallType;
-    color: lighten(@near-black, 40%);
-  }
-  .col-md-10 {
-    padding-left: 0;
-  }
-}
-
 header.band {
   background-image:url("/img/post_bg.jpg");
   background-size: 100%;
-  color: white;
+  color: @bg;
   text-align: center;
   padding: 10% 0 15% 0;
   z-index: 0;
 }
 
-.f-left {
-  float: left;
-}
-
-.clear {
-  clear: both;
-}
-
 section {
   h2 {
-    color: @blue;
+    color: @primary;
   } 
 }
 
@@ -211,7 +239,7 @@ h2 {
 }
 
 nav {
-	.nav(8, @white, @bodyCopy);
+	.nav(8, @bg, @bodyCopy);
   clear: both;
   color: black;
   font-size: @smallType;
@@ -241,17 +269,17 @@ nav {
   display: none;
   width: 100%;
   top: 0;
-  background-color: @near-black;
-  color: @white;
+  background-color: @grayDark;
+  color: @bg;
   list-style-type: none;
   margin: 0;
   padding: 10px;
   li {
-    border-bottom: 1px solid darken(@white, 50%);
+    border-bottom: 1px solid darken(@bg, 50%);
     padding: 20px;
   }
   a {
-    color: @white;
+    color: @bg;
     &:last-child {
     li {
       border-bottom: 0px;
@@ -300,7 +328,7 @@ footer {
     margin-left: 0%;
   }
   height: 100px;
-	background: darken(@white, 10%);
+	background: darken(@bg, 10%);
   padding-top: 15px;
 }
 
@@ -343,7 +371,7 @@ figure {
 figcaption { 
   position: absolute; 
   background: rgba(0,0,0,0.75); 
-  color: white; 
+  color: @bg; 
   padding: 10px 20px; 
   opacity: 0;
   width: 100%;
@@ -360,7 +388,7 @@ figure:before {
   position: absolute; 
   font-weight: 800; 
   background: rgba(255,255,255,0.75); 
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px @bg;
   color: black;
   width: 24px;
   height: 24px;
@@ -524,18 +552,6 @@ a {
 .borderBottom(@color) {
   border-bottom: 4px solid darken(@color, 5%);
 }
-
-// Variables
-@baseBorderRadius:      2px;
-
-@zindexDropdown:          1000;
-@zindexPopover:           1010;
-@zindexTooltip:           1030;
-@zindexFixedNavbar:       1030;
-@zindexModalBackdrop:     1040;
-@zindexModal:             1050;
-
-
 
 
 // Responsive slide CSS

@@ -1,0 +1,63 @@
+
+// Mixins
+// -------------------------
+.f-left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.f-right {
+  float: right;
+}
+
+.zero() {
+  margin: 0;
+  padding: 0;
+}
+
+.borderTopLight (@color) {
+  border-top: 1px solid darken(@color, 3%);
+}
+
+.backgroundSetsTextColor (@backgroundColor) when (lightness(@backgroundColor) >= 99.5%) {
+  background-color: @backgroundColor;
+  color: @light-coal;
+}
+
+.border-bottom-radius(@radius) {
+  .border-bottom-right-radius(@radius);
+  .border-bottom-left-radius(@radius);
+}
+
+.textCenter() {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.textVertical() {
+  vertical-align: middle;
+}
+
+.hovers() {
+  // transition: background-color 0.5s ease-in-out;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.border-bottom-right-radius(@radius) {
+  -webkit-border-bottom-right-radius: @radius;
+      -moz-border-radius-bottomright: @radius;
+          border-bottom-right-radius: @radius;
+}
+
+.border-bottom-left-radius(@radius) {
+  -webkit-border-bottom-left-radius: @radius;
+      -moz-border-radius-bottomleft: @radius;
+          border-bottom-left-radius: @radius;
+}
+
+.borderBottom(@color) {
+  border-bottom: 4px solid darken(@color, 5%);
+}

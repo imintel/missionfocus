@@ -1,11 +1,8 @@
-
 // Blog Page
 // -------------------------
+
 // Handles the ul of different posts on the page
 .posts {
-  li {
-    line-height: @lineHeight;
-  }
   p {
     line-height: @lineHeightSmall;
   }
@@ -13,21 +10,17 @@
     font-size: @smallType;
     color: @grayDark;
   }
-  .col-md-10 {
-    padding-left: 0;
+    svg {
+    margin-top: 20px;
   }
+
 }
 // Styling for each individual blog entry
 .post {
-  height: 200px;
-  position: relative;
-  overflow: hidden;
   img {
     margin-top: 5px;
   }
-}
-
-
-.posts {
-  margin: 0;
+  h2 {
+    float: left;
+  }
 }

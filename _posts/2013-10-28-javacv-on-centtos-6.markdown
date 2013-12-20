@@ -5,6 +5,7 @@ author: Will S. Laurance
 img: wslaurance.png
 date: 2013-10-28 08:41
 comments: false
+description: This thing does this
 categories: 
 - Institute for Modern Intelligence
 - MissionFocus
@@ -12,11 +13,8 @@ categories:
 ---
 
 [JavaCV](https://code.google.com/p/javacv/) is a "Java interface to
-[OpenCV](http://opencv.org/) and more". OpenCV is the de facto standard
-of computer vision software enabling facial recognition, motion
-detection, general object detection to run over images. JavaCV
-incorporates with other technologies like [ffmpeg](http://www.ffmpeg.org/) allowing
-the same computer vision algorithms to intake videos.
+[OpenCV](http://opencv.org/) and more". OpenCV is the de facto standard of computer vision software enabling facial recognition, motion detection, general object detection to run over images. JavaCV
+incorporates with other technologies like [ffmpeg](http://www.ffmpeg.org/) allowing the same computer vision algorithms to intake videos.
 
 If Java is language of choice, or the JVM, Java Bindings are used
 to interact with c/c++ libraries like OpenCV and ffmpeg. JavaCV provides all the jars

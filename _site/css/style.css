@@ -2157,6 +2157,12 @@ nav ul li menu li {
 }
 .posts svg {
   margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+h2 a {
+  color: #4a4a4a;
+  font-weight: 700;
 }
 .post img {
   margin-top: 5px;

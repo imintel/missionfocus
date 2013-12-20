@@ -78,17 +78,11 @@
 incorporates with other technologies like <a href="http://www.ffmpeg.org/">ffmpeg</a> allowing the same computer vision algorithms to intake videos.</p>
 
 <p>If Java is language of choice, or the JVM, Java Bindings are used
-to interact with c/c++ libraries like OpenCV and ffmpeg. JavaCV provides all the jars
-pre-built including a jar that contains .so files, shared object files,
-for the various platforms, Mac, Linux and Windows. The <em>intention</em> is to
-not require a system level install of the OpenCV libraries.</p>
+to interact with c/c++ libraries like OpenCV and ffmpeg. JavaCV provides all the jars pre-built including a jar that contains .so files, shared object files, for the various platforms, Mac, Linux and Windows. The <em>intention</em> is to not require a system level install of the OpenCV libraries.</p>
 
-<p>CentOS 6.4 was unable to find the
-shared object files. JavaCV loaded the .so files from the
-provided jar and dynamically made the jnilib*.so files. Unfortunately
-the <a href="https://www.gnu.org/software/libc/">libc</a> version provided with
-CentOS 6.4 is below the version the provided .so files were built for and the linking operation failed.
-To see what version of libc is installed, <code>ldd --version</code>. In this case 2.12 and the stack traces looked like this:</p>
+<p>CentOS 6.4 was unable to find the shared object files. JavaCV loaded the .so files from the provided jar and dynamically made the jnilib*.so files. Unfortunately the <a href="https://www.gnu.org/software/libc/">libc</a> version provided with CentOS 6.4 is below the version the provided .so files were built for and the linking operation failed.</p>
+
+<p>To see what version of libc is installed, <code>ldd --version</code>. In this case 2.12 and the stack traces looked like this:</p>
 <div class="highlight"><pre><code class="text language-text" data-lang="text">Exception in thread &quot;main&quot; java.lang.UnsatisfiedLinkError: no jniopencv_objdetect in java.library.path
         at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1681)
         at java.lang.Runtime.loadLibrary0(Runtime.java:840)

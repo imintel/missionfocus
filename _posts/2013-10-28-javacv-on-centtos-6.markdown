@@ -5,7 +5,7 @@ author: Will S. Laurance
 img: wslaurance.png
 date: 2013-10-28 08:41
 comments: false
-description: This thing does this
+description: How to <em>not</em> require a system level install of the OpenCV libraries.
 categories: 
 - Institute for Modern Intelligence
 - MissionFocus
@@ -17,16 +17,10 @@ categories:
 incorporates with other technologies like [ffmpeg](http://www.ffmpeg.org/) allowing the same computer vision algorithms to intake videos.
 
 If Java is language of choice, or the JVM, Java Bindings are used
-to interact with c/c++ libraries like OpenCV and ffmpeg. JavaCV provides all the jars
-pre-built including a jar that contains .so files, shared object files,
-for the various platforms, Mac, Linux and Windows. The <em>intention</em> is to
-not require a system level install of the OpenCV libraries.
+to interact with c/c++ libraries like OpenCV and ffmpeg. JavaCV provides all the jars pre-built including a jar that contains .so files, shared object files, for the various platforms, Mac, Linux and Windows. The <em>intention</em> is to not require a system level install of the OpenCV libraries.
 
-CentOS 6.4 was unable to find the
-shared object files. JavaCV loaded the .so files from the
-provided jar and dynamically made the jnilib\*.so files. Unfortunately
-the [libc](https://www.gnu.org/software/libc/) version provided with
-CentOS 6.4 is below the version the provided .so files were built for and the linking operation failed.
+CentOS 6.4 was unable to find the shared object files. JavaCV loaded the .so files from the provided jar and dynamically made the jnilib\*.so files. Unfortunately the [libc](https://www.gnu.org/software/libc/) version provided with CentOS 6.4 is below the version the provided .so files were built for and the linking operation failed.
+
 To see what version of libc is installed, `ldd --version`. In this case 2.12 and the stack traces looked like this:
 
 ```

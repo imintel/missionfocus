@@ -1989,6 +1989,12 @@ p.jumbotron {
 .modules img:hover {
   -webkit-filter: grayscale(0%);
 }
+.logo-downloads {
+  width: 100%;
+}
+.gdac {
+  width: 25%;
+}
 .col-lg-4 {
   padding-right: 20px;
 }
@@ -2004,6 +2010,9 @@ p.jumbotron {
 section img {
   float: left;
   margin-right: 20px;
+}
+.intro {
+  font-size: 150%;
 }
 table {
   width: 100%;

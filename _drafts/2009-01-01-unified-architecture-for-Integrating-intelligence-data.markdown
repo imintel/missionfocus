@@ -4,9 +4,6 @@ title: Unified Architecture for Integrating Intelligence Data
 author: Andrew M. Eick
 img: maeick.png
 date: 2009-01-01 18:13
-comments: false
-categories: 
-- papers
 ---
 *Abstract*
 

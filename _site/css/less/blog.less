@@ -3,25 +3,36 @@
 
 // Handles the ul of different posts on the page
 .posts {
-  p {
-    line-height: @lineHeightSmall;
-  }
-  span {
-    font-size: @smallType;
-    color: @grayDark;
-  }
-    svg {
+  svg {
     margin-top: 20px;
     height: 100%;
     width: 100%;
   }
-
-}
-
-h2 {
+  span {
+    font-size: 75%;
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-family: @2sansSerif;
+  }
+  p {
+    line-height: 150%;
+  }
   a {
     color: lighten(@grayDark, 9%);
     font-weight: 700;
+    &:hover {
+      text-decoration: none;
+    } 
+  }
+  h2 {
+    margin-bottom: -2px;
+  }
+  .col-xs-12 {
+    padding: 0;
+    clear:both;
+  }
+  .col-xs-2 {
+    padding-left: 0;
   }
 }
 

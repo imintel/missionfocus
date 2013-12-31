@@ -6,10 +6,6 @@ img: wslaurance.png
 date: 2013-10-28 08:41
 comments: false
 description: How to <em>not</em> require a system level install of the OpenCV libraries.
-categories: 
-- Institute for Modern Intelligence
-- MissionFocus
-- work
 ---
 
 [JavaCV](https://code.google.com/p/javacv/) is a "Java interface to

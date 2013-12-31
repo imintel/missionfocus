@@ -2251,21 +2251,36 @@ nav ul li menu li {
 .mobile a:last-child li {
   border-bottom: 0px;
 }
-.posts p {
-  line-height: 24px;
-}
-.posts span {
-  font-size: 14px;
-  color: #333333;
-}
 .posts svg {
   margin-top: 20px;
   height: 100%;
   width: 100%;
 }
-h2 a {
+.posts span {
+  font-size: 75%;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-family: "jaf-bernino-sans", "proxima-nova", sans-serif;
+}
+.posts p {
+  line-height: 150%;
+}
+.posts a {
   color: #4a4a4a;
   font-weight: 700;
+}
+.posts a:hover {
+  text-decoration: none;
+}
+.posts h2 {
+  margin-bottom: -2px;
+}
+.posts .col-xs-12 {
+  padding: 0;
+  clear: both;
+}
+.posts .col-xs-2 {
+  padding-left: 0;
 }
 .post img {
   margin-top: 5px;

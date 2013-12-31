@@ -1,54 +1,14 @@
 $( document ).ready(function() {
 
-  $(function() {
-      $(".rslides").responsiveSlides({
-        auto: true,             // Boolean: Animate automatically, true or false
-        speed: 2000,            // Integer: Speed of the transition, in milliseconds
-        timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-        pager: false,           // Boolean: Show pager, true or false
-        nav: false,             // Boolean: Show navigation, true or false
-        random: false,          // Boolean: Randomize the order of the slides, true or false
-        pause: false,           // Boolean: Pause on hover, true or false
-        pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-        prevText: "Previous",   // String: Text for the "previous" button
-        nextText: "Next",       // String: Text for the "next" button
-        maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
-        navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-        manualControls: "",     // Selector: Declare custom pager navigation
-        namespace: "rslides",   // String: Change the default namespace used
-        before: function(){},   // Function: Before callback
-        after: function(){}     // Function: After callback
-      });
+  ($('.nav--index-header-anchors')).click(function(){
+    $('.nav--index-header-anchors').removeClass('active');
+    $(this).addClass('active');
+
+    $("[id$='-body']").hide();
+
+    var id = $(this).attr('id') + '-body';
+    console.log(id);
+    $('#' + id).show();
   });
-
-  var viewportWidth = $(window).width();
-
-  var mobileNav = function() {
-
-    if (viewportWidth < 500) {
-      $("nav").click(function(){
-        $(".mobile").slideToggle();
-        console.log("Clicked");
-      });
-    }
-  };
-
-  if ($('a').hasClass('.active')){
-    console.log("hey");
-  }
-
-  var blogPostNav = function() {
-
-    if (viewportWidth > 500){
-      $("#post nav").click(function(){
-        $(".mobile").slideToggle();
-        console.log("Clicked");
-      });
-    }
-  };
-
-  mobileNav();
-
-  blogPostNav();
 
 });

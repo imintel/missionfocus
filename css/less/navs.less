@@ -1,3 +1,80 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media (min-width : 0px) and (max-width : 480px) {
+  .index--header {
+    a {
+      color: @white;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav--logo {
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    background-image: url('../img/nav.png');
+    width: 60px;
+    height: 60px;
+    z-index: 50000;
+  }
+
+  .nav--index-header {
+    width: 70%;
+    top: 70%;
+    position: absolute;
+    left: 15%;
+  }
+
+  .nav--index-header-anchors {
+    // Look
+    color: @white;
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+    .aliasing;
+    font-family: @2sansSerif;
+
+    // Padding/positioning
+    border-top: 1px solid @white;
+    display: block;
+    padding: 2px;
+    width: (100%/3)*1px;
+    float: left;
+    padding-top: 15px;
+
+    &.active {
+      opacity: 1.0;
+    }
+
+    // Fixes for text alignments
+    &:nth-child(2) {
+      text-align: center;
+    }
+    &:nth-child(3) {
+      text-align: right;
+    }
+  }
+
+  // Figure this out
+  .cap-bot {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+
 
 nav {
   .nav(8, @bg, @bodyCopy);
@@ -23,7 +100,7 @@ nav {
     ul {
       display: none;
     }
-}
+  }
 }
 
 .mobile {

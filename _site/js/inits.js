@@ -31,6 +31,10 @@ $( document ).ready(function() {
         console.log("Clicked");
       });
     }
+  };
+
+  if ($('a').hasClass('.active')){
+    console.log("hey");
   }
 
   var blogPostNav = function() {
@@ -41,7 +45,7 @@ $( document ).ready(function() {
         console.log("Clicked");
       });
     }
-  }
+  };
 
   mobileNav();
 

@@ -1,3 +1,37 @@
+// Needs to be refactored
+
+.index--header {
+  background-image: url('../img/header_bg.jpg');
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+  font-family: @sansSerif;
+  position: relative;
+}
+
+.index--company-name {
+  color: @white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 175%;
+  margin-left: (-172/2)*1px;
+  -webkit-font-smoothing:antialiased;
+}
+
+.index--tagline {
+  font-size: 75%;
+  color: @white;
+  -webkit-font-smoothing:antialiased;
+  position: absolute;
+  margin-left: (-230/2)*1px;
+  top: 48%;
+  left: 50%;
+}
+
 // General Page Styles
 // -------------------------
 html, body {
@@ -107,9 +141,4 @@ footer {
   margin-left: -95.5px;
   margin-top: 2%;
   display: block;
-}
-
-// So that the logo displays correctly
-.container {
-  padding-top: 215px;
 }

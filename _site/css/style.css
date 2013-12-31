@@ -1,3 +1,7 @@
+.aliasing {
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+}
 .f-left {
   float: left;
 }
@@ -6,6 +10,10 @@
 }
 .f-right {
   float: right;
+}
+.zero {
+  margin: 0;
+  padding: 0;
 }
 /* a href's without hrefs don't seem clickable */
 a {
@@ -1954,6 +1962,35 @@ figure:hover:before {
 .cap-bot:hover figcaption {
   bottom: 0;
 }
+.index--header {
+  background-image: url('../img/header_bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+  font-family: "proxima-nova", sans-serif;
+  position: relative;
+}
+.index--company-name {
+  color: #ffffff;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 175%;
+  margin-left: -86px;
+  -webkit-font-smoothing: antialiased;
+}
+.index--tagline {
+  font-size: 75%;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  margin-left: -115px;
+  top: 48%;
+  left: 50%;
+}
 html,
 body {
   background-color: #f4f4f4;
@@ -2046,8 +2083,65 @@ footer p {
   margin-top: 2%;
   display: block;
 }
-.container {
-  padding-top: 215px;
+/* Smartphones (portrait and landscape) ----------- */
+@media (min-width: 0px) and (max-width: 480px) {
+  .index--header a {
+    color: #ffffff;
+  }
+  .index--header a:hover {
+    text-decoration: none;
+  }
+  .nav--logo {
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    background-image: url('../img/nav.png');
+    width: 60px;
+    height: 60px;
+    z-index: 50000;
+  }
+  .nav--index-header {
+    width: 70%;
+    top: 70%;
+    position: absolute;
+    left: 15%;
+  }
+  .nav--index-header-anchors {
+    color: #ffffff;
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-family: "jaf-bernino-sans", "proxima-nova", sans-serif;
+    border-top: 1px solid #ffffff;
+    display: block;
+    padding: 2px;
+    width: 33.333333333333336%;
+    float: left;
+    padding-top: 15px;
+  }
+  .nav--index-header-anchors.active {
+    opacity: 1.0;
+  }
+  .nav--index-header-anchors:nth-child(2) {
+    text-align: center;
+  }
+  .nav--index-header-anchors:nth-child(3) {
+    text-align: right;
+  }
+  .cap-bot {
+    width: 100%;
+  }
+  .cap-bot img {
+    width: 100%;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
 }
 nav {
   width: 100%;

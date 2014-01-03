@@ -6555,6 +6555,10 @@ div.ui-slider-switch.ui-mini {
 .ui-content {
   padding: 0;
 }
+.ui-btn {
+  font-family: inherit;
+  font-weight: inherit;
+}
 .ui-body-c,
 .ui-overlay-c {
   text-shadow: none;
@@ -6614,12 +6618,11 @@ div.ui-slider-switch.ui-mini {
   width: 100% !important;
   height: 100% !important;
 }
-#dir h2,
-#dir h4 {
+#dir h2 {
   font-weight: 700;
 }
 #dir a {
-  color: #222222;
+  color: #333333;
 }
 #dir a:hover {
   text-decoration: none;
@@ -6653,6 +6656,24 @@ div.ui-slider-switch.ui-mini {
   position: relative;
   display: block;
   padding-top: 10px;
+}
+.ui-btn-icon-left:after {
+  left: 0;
+  content: none;
+}
+.ui-icon-plus {
+  display: none;
+}
+.ui-icon-minus {
+  display: none;
+}
+.ui-btn,
+label.ui-btn {
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner {
+  padding-left: 32px;
 }
 @media (min-width: 0px) and (max-width: 480px) {
   #dir .fluid-wrapper {

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JavaCV on CentTOS 6"
+title: "JavaCV on CentOS 6"
 author: Will S. Laurance
 img: wslaurance.png
 date: 2013-10-28 08:41

@@ -25,6 +25,8 @@ $( document ).ready(function() {
         $(navHref).hide();
       });
       $(href).show();
+      var active = $('.nav--index-header-anchors').find('a:contains(' + href + ')');
+      $(active).addClass('active');
     }
   });
 

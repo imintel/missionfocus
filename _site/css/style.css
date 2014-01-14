@@ -6523,35 +6523,6 @@ div.ui-slider-switch.ui-mini {
     display: none;
   }
 }
-.index--header {
-  background-image: url('../img/header_bg.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 220px;
-  font-family: "proxima-nova", sans-serif;
-  position: relative;
-}
-.index--company-name {
-  color: #ffffff;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  font-size: 175%;
-  margin-left: -86px;
-  -webkit-font-smoothing: antialiased;
-}
-.index--tagline {
-  font-size: 75%;
-  color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  position: absolute;
-  margin-left: -115px;
-  top: 48%;
-  left: 50%;
-}
 .ui-content {
   padding: 0;
 }
@@ -6773,178 +6744,105 @@ footer p {
   margin-top: 2%;
   display: block;
 }
-/* Smartphones (portrait and landscape) ----------- */
-@media (min-width: 0px) and (max-width: 480px) {
-  .index--header a {
-    color: #ffffff;
-  }
-  .index--header a:hover {
-    text-decoration: none;
-  }
-  .nav--logo {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-image: url('../img/nav.png');
-    width: 60px;
-    height: 60px;
-    z-index: 50000;
+/*
+ * Navs for MissionFocus.com
+ * 
+ * Also includes the styles for the header area,
+ * Index
+ *
+ */
+.index--header {
+  background-image: url('../img/header_bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  font-family: "proxima-nova", sans-serif;
+  position: relative;
+}
+.index--company-name {
+  color: #ffffff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 175%;
+  margin-left: -86px;
+  -webkit-font-smoothing: antialiased;
+}
+.index--tagline {
+  font-size: 75%;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  margin-left: -115px;
+  top: 48%;
+  left: 50%;
+}
+.index--header a {
+  color: #ffffff;
+}
+.index--header a:hover {
+  text-decoration: none;
+}
+.nav--logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-image: url('../img/nav.png');
+  width: 60px;
+  height: 60px;
+  z-index: 50000;
+}
+.nav--index-header {
+  width: 70%;
+  top: 70%;
+  position: absolute;
+  left: 15%;
+}
+.nav--index-header-anchors {
+  color: #ffffff;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-family: "jaf-bernino-sans", "proxima-nova", sans-serif;
+  border-top: 1px solid #ffffff;
+  display: block;
+  padding: 2px;
+  width: 33.333333333333336%;
+  float: left;
+  padding-top: 15px;
+}
+.nav--index-header-anchors.active {
+  opacity: 1.0;
+}
+.nav--index-header-anchors:nth-child(2) {
+  text-align: center;
+}
+.nav--index-header-anchors:nth-child(3) {
+  text-align: right;
+}
+/* Navs for > tablets ----------- */
+@media (min-width: 768px) {
+  .index--tagline {
+    font-size: 100%;
+    margin-left: -154px;
   }
   .nav--index-header {
-    width: 70%;
-    top: 70%;
-    position: absolute;
-    left: 15%;
+    width: 50%;
+    left: 25%;
   }
-  .nav--index-header-anchors {
-    color: #ffffff;
-    opacity: 0.6;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    font-size: 11px;
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-family: "jaf-bernino-sans", "proxima-nova", sans-serif;
-    border-top: 1px solid #ffffff;
-    display: block;
-    padding: 2px;
-    width: 33.333333333333336%;
-    float: left;
-    padding-top: 15px;
-  }
-  .nav--index-header-anchors.active {
-    opacity: 1.0;
-  }
-  .nav--index-header-anchors:nth-child(2) {
-    text-align: center;
-  }
-  .nav--index-header-anchors:nth-child(3) {
-    text-align: right;
-  }
-  .cap-bot {
-    width: 100%;
-  }
-  .cap-bot img {
-    width: 100%;
-  }
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
-}
-nav {
-  width: 100%;
-  float: left;
-  z-index: 1050;
-  position: relative;
-  clear: both;
-  color: black;
-  font-size: 14px;
-  font-family: "proxima-nova", sans-serif;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-nav ul {
-  float: left;
-  width: 100%;
-  top: 50%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  vertical-align: middle;
-}
-nav ul a {
-  color: #222222;
-}
-nav ul a:hover {
-  color: #2f2f2f;
-}
-nav ul li {
-  display: inline-block;
-  height: 51px;
-  list-style-type: none;
-  float: left;
-  margin: 0;
-  width: 12.5%;
-  padding: 22px 0 0 0;
-  text-align: center;
-  vertical-align: middle;
-  border-bottom: 4px solid #e7e7e7;
-}
-nav ul li:hover {
-  transition: border-bottom 0.2s ease-in-out;
-  border-bottom: 4px solid #c1c1c1;
-}
-nav ul li menu {
-  display: none;
-  width: 100%;
-  height: 25px;
-  background-color: #f4f4f4;
-  -webkit-margin-before: 30px;
-  -webkit-margin-after: 0;
-  -webkit-padding-start: 0;
-  margin-before: 30px;
-  margin-after: 0;
-  margin-left: 0;
-}
-nav ul li menu li {
-  clear: both;
-  float: none;
-  height: 25px;
-  list-style-type: none;
-  background-color: #f4f4f4;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #ececec;
-}
-nav ul li menu li {
-  border-top: 0px;
-}
-@media (max-width: 500px) {
-  nav {
-    cursor: pointer;
-    z-index: 50000;
-    background: url("/img/post_nav.png") no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    top: -15px;
-    left: 75%;
-  }
-  nav ul {
-    display: none;
-  }
-}
-.mobile {
-  display: none;
-  width: 100%;
-  top: 0;
-  background-color: #333333;
-  color: #f4f4f4;
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
-}
-.mobile li {
-  border-bottom: 1px solid #757575;
-  padding: 20px;
-}
-.mobile a {
-  color: #f4f4f4;
-}
-.mobile a:last-child li {
-  border-bottom: 0px;
 }
 .posts svg {
   margin-top: 20px;
   height: 100%;
   width: 100%;
+  max-width: 80px;
 }
 .posts span {
   font-size: 75%;

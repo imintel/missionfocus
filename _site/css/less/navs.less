@@ -1,127 +1,109 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media (min-width : 0px) and (max-width : 480px) {
-  .index--header {
-    a {
-      color: @white;
-      &:hover {
-        text-decoration: none;
-      }
+/*
+ * Navs for MissionFocus.com
+ * 
+ * Also includes the styles for the header area,
+ * Index
+ *
+ */
+
+ .index--header {
+  background-image: url('../img/header_bg.jpg');
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  font-family: @sansSerif;
+  position: relative;
+}
+
+.index--company-name {
+  color: @white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 175%;
+  margin-left: (-172/2)*1px;
+  -webkit-font-smoothing:antialiased;
+}
+
+.index--tagline {
+  font-size: 75%;
+  color: @white;
+  -webkit-font-smoothing:antialiased;
+  position: absolute;
+  margin-left: (-230/2)*1px;
+  top: 48%;
+  left: 50%;
+}
+
+.index--header {
+  a {
+    color: @white;
+    &:hover {
+      text-decoration: none;
     }
   }
+}
 
-  .nav--logo {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-image: url('../img/nav.png');
-    width: 60px;
-    height: 60px;
-    z-index: 50000;
+.nav--logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-image: url('../img/nav.png');
+  width: 60px;
+  height: 60px;
+  z-index: 50000;
+}
+
+.nav--index-header {
+  width: 70%;
+  top: 70%;
+  position: absolute;
+  left: 15%;
+}
+
+.nav--index-header-anchors {
+  color: @white;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  .aliasing;
+  font-family: @2sansSerif;
+
+  // Padding/positioning
+  border-top: 1px solid @white;
+  display: block;
+  padding: 2px;
+  width: (100%/3)*1px;
+  float: left;
+  padding-top: 15px;
+
+  &.active {
+    opacity: 1.0;
+  }
+
+  // Fixes for text alignments
+  &:nth-child(2) {
+    text-align: center;
+  }
+  &:nth-child(3) {
+    text-align: right;
+  }
+}
+
+/* Navs for > tablets ----------- */
+@media (min-width : 768px) {
+  .index--tagline {
+    font-size: 100%;
+    margin-left: (-308/2)*1px;
   }
 
   .nav--index-header {
-    width: 70%;
-    top: 70%;
-    position: absolute;
-    left: 15%;
-  }
-
-  .nav--index-header-anchors {
-    // Look
-    color: @white;
-    opacity: 0.6;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    font-size: 11px;
-    .aliasing;
-    font-family: @2sansSerif;
-
-    // Padding/positioning
-    border-top: 1px solid @white;
-    display: block;
-    padding: 2px;
-    width: (100%/3)*1px;
-    float: left;
-    padding-top: 15px;
-
-    &.active {
-      opacity: 1.0;
-    }
-
-    // Fixes for text alignments
-    &:nth-child(2) {
-      text-align: center;
-    }
-    &:nth-child(3) {
-      text-align: right;
-    }
-  }
-
-  // Figure this out
-  .cap-bot {
-    width: 100%;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-}
-
-
-
-nav {
-  .nav(8, @bg, @bodyCopy);
-  clear: both;
-  color: black;
-  font-size: @smallType;
-  font-family: @sansSerif;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  @media (max-width: 500px) {
-    cursor: pointer;
-    z-index: 50000;
-    background: url("/img/post_nav.png") no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    top: -15px;
-    left: 75%;
-    ul {
-      display: none;
-    }
-  }
-}
-
-.mobile {
-  display: none;
-  width: 100%;
-  top: 0;
-  background-color: @grayDark;
-  color: @bg;
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
-  li {
-    border-bottom: 1px solid darken(@bg, 50%);
-    padding: 20px;
-  }
-  a {
-    color: @bg;
-    &:last-child {
-    li {
-      border-bottom: 0px;
-    }
-  }
+    width: 50%;
+    left: 25%;
   }
 }

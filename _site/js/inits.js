@@ -25,8 +25,13 @@ $( document ).ready(function() {
         $(navHref).hide();
       });
       $(href).show();
-      var active = $('.nav--index-header-anchors').find('a:contains(' + href + ')');
-      $(active).addClass('active');
+      $('.nav--index-header a').each( function() {
+        var anchors = $(this).attr('href');
+        if (anchors.indexOf(href) >= 0) {
+          $('.nav--index-header a').removeClass('active');
+          $(this).addClass('active');
+        }
+      });
     }
   });
 

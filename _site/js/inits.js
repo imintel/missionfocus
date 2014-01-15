@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+  // Handle nav anchor links and such
   ($('.nav--index-header-anchors')).click(function(){
     $('.nav--index-header-anchors').removeClass('active');
     $(this).addClass('active');
@@ -35,4 +36,9 @@ $( document ).ready(function() {
     }
   });
 
+  // Handle mobile/tablet to desktop swap
+  if ( $(document).width() > 760) {
+    $('#dir').show();
+    $('#contact').show();
+  }
 });

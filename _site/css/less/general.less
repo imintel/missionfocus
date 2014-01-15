@@ -59,24 +59,36 @@
 // Google Map (fluid)
 .fluid-wrapper {
   position: relative;
-  padding-bottom: 75%; // This is the aspect ratio
+  padding-bottom: 65%; // This is the aspect ratio
   height: 0;
   overflow: hidden;
+  @media (min-width : 960px) {
+    padding-bottom: 65%;
+  }
   iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100% !important;
     height: 100% !important;
+    border: none;
   }
 }
 
+.right {
+  float: right;
+  display: inline;
+}
+
 #dir {
+  .ui-btn-text {
+    font-weight: 700;
+  }
   h2 {
     font-weight: 700;
   }
 
-  a {
+  .ui-btn-inner a {
     color: @grayDark;
     &:hover {
       text-decoration: none;
@@ -133,7 +145,7 @@
   padding-left: 32px;
 }
 
-@media (min-width : 0px) and (max-width : 480px) {
+@media (min-width : 0) and (max-width : 770px) {
   #dir {
     .fluid-wrapper {
       .hidden;

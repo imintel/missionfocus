@@ -6582,9 +6582,14 @@ div.ui-slider-switch.ui-mini {
 }
 .fluid-wrapper {
   position: relative;
-  padding-bottom: 75%;
+  padding-bottom: 65%;
   height: 0;
   overflow: hidden;
+}
+@media (min-width: 960px) {
+  .fluid-wrapper {
+    padding-bottom: 65%;
+  }
 }
 .fluid-wrapper iframe {
   position: absolute;
@@ -6592,18 +6597,26 @@ div.ui-slider-switch.ui-mini {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+  border: none;
+}
+.right {
+  float: right;
+  display: inline;
+}
+#dir .ui-btn-text {
+  font-weight: 700;
 }
 #dir h2 {
   font-weight: 700;
 }
-#dir a {
+#dir .ui-btn-inner a {
   color: #333333;
 }
-#dir a:hover {
+#dir .ui-btn-inner a:hover {
   text-decoration: none;
   color: #555555;
 }
-#dir a:active {
+#dir .ui-btn-inner a:active {
   text-decoration: none;
   color: #555555;
 }
@@ -6650,7 +6663,7 @@ label.ui-btn {
 .ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner {
   padding-left: 32px;
 }
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0) and (max-width: 770px) {
   #dir .fluid-wrapper {
     display: none !important;
     visibility: hidden !important;

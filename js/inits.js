@@ -38,7 +38,9 @@ $( document ).ready(function() {
 
   // Handle mobile/tablet to desktop swap
   if ( $(document).width() > 760) {
+    $('#blog').show();
     $('#dir').show();
     $('#contact').show();
+    console.log("hey");
   }
 });

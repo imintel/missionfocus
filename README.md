@@ -1,5 +1,7 @@
 # Mission Focus Website
 
+[![Build Status](https://travis-ci.org/helenvholmes/missionfocus.png?branch=master)](https://travis-ci.org/helenvholmes/missionfocus)
+
 ## Production
 Github will only run Jekyll in safemode - this means that any plugins being used in development will break. ([LESS](http://www.lesscss.org/) plugins, [Coffeescript](http://coffeescript.org/) plugins, etc). In order to not break [missionfocus.com](missionfocus.com) in production, please follow the appropriate format for making changes to the public facing site:
 

@@ -1,3 +1,5 @@
-rvm:
-  - "1.9.3"
-  - jekyll
+language: ruby
+script: jekyll build
+branches:
+    - master
+    - gh-pages

@@ -6,11 +6,12 @@
 
 @media only screen and (min-width : 1224px) {
   .dir--logo-parallax {
+    .fadein(2s);
     display: block;
     position: relative;
     width: 200px;
     height: 200px;
-    background: url('../img/logo-small_bw_2x.png') no-repeat 40px 15px @black50;
+    background: url('../img/logo-small_bw_2x.png') no-repeat 40px 15px @grayDark;
     border-radius: 50%;
     margin-top: -100px;
     margin-left: 50%;
@@ -23,32 +24,58 @@
   }
 }
 
-.map {
+
+.map--container {
+  margin-bottom: 100px;
+
+  &:hover {
+    .map--get-directions {
+        display: block;
+        position: absolute;
+        top: 230px;
+        left: 43.5%;
+        color: @white;
+        font-size: @largeType;
+        font-weight: 200;
+        -webkit-font-smoothing: antialiased;
+      }
+  }
+}
+
+.map--get-directions {
+  display: none;
+  z-index: @zindexModal;
+}
+
+.map--image {
     background: url('../img/map.jpg') 0px -150px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    .fadein(4s);
     width: 100%;
     height: 200px;
     margin-top: 50px;
     &:before {
-      content: "";  
-      display: block;  
-      position: absolute;  
-      top: 0;  
-      bottom: 0;  
-      left: 0;  
-      right: 0;  
-      background: rgba(0,255,255, 0.5);  
-      -moz-transition: background .3s linear;  
-      -webkit-transition: background .3s linear;  
-      -o-transition: background .3s linear;  
-      transition: background .3s linear;  
+      content: '';
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 200px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: none;
+      -moz-transition: background content 0.5s ease;
+      -webkit-transition: background content 0.5s ease;
+      -o-transition: background 0.5s ease;
+      transition: background 0.5s ease;
     }
     &:hover {
       &:before {
-        background: none;  
+        background: @black75;
       }
     }
 }

@@ -1885,7 +1885,7 @@ figure {
 figcaption {
   position: absolute;
   background: rgba(0, 0, 0, 0.75);
-  color: #f4f4f4;
+  color: #e5e5e5;
   padding: 10px 20px;
   opacity: 0;
   width: 100%;
@@ -1902,7 +1902,7 @@ figure:before {
   position: absolute;
   font-weight: 800;
   background: rgba(255, 255, 255, 0.75);
-  text-shadow: 0 0 5px #f4f4f4;
+  text-shadow: 0 0 5px #e5e5e5;
   color: black;
   width: 24px;
   height: 24px;
@@ -6606,6 +6606,11 @@ div.ui-slider-switch.ui-mini {
   float: right;
   display: inline;
 }
+@media only screen and (min-width: 1224px) {
+  .desktop-none {
+    display: none;
+  }
+}
 #dir .ui-btn-text {
   font-weight: 700;
 }
@@ -6674,7 +6679,7 @@ label.ui-btn {
 }
 html,
 body {
-  background-color: #f4f4f4;
+  background-color: #e5e5e5;
   font-size: 16px;
   font-family: "ff-tisa-web-pro", serif;
   color: #222222;
@@ -6739,7 +6744,7 @@ table tr {
   width: 100%;
 }
 table td {
-  border: 1px solid #dbdbdb;
+  border: 1px solid #cccccc;
   padding: 10px;
 }
 textarea {
@@ -6747,7 +6752,7 @@ textarea {
 }
 footer {
   height: 100px;
-  background: #dbdbdb;
+  background: #cccccc;
   padding-top: 15px;
 }
 footer .container {
@@ -6799,7 +6804,7 @@ footer p {
 }
 @media only screen and (min-width: 1224px) {
   .index--company-name {
-    top: 35%;
+    top: 38%;
     -webkit-animation: fadein 2s;
     /* Safari and Chrome */
   
@@ -6828,7 +6833,7 @@ footer p {
   .index--tagline {
     animation: movedown 1.1s ease;
     -webkit-animation: movedown 1.1s ease;
-    top: 320px;
+    top: 350px;
     opacity: 0.5;
   }
   @keyframes movedown {
@@ -6959,11 +6964,24 @@ footer p {
 }
 @media only screen and (min-width: 1224px) {
   .dir--logo-parallax {
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+  
+    -moz-animation: fadein 2s;
+    /* Firefox */
+  
+    -ms-animation: fadein 2s;
+    /* Internet Explorer */
+  
+    -o-animation: fadein 2s;
+    /* Opera */
+  
+    animation: fadein 2s;
     display: block;
     position: relative;
     width: 200px;
     height: 200px;
-    background: url('../img/logo-small_bw_2x.png') no-repeat 40px 15px rgba(0, 0, 0, 0.5);
+    background: url('../img/logo-small_bw_2x.png') no-repeat 40px 15px #333333;
     border-radius: 50%;
     margin-top: -100px;
     margin-left: 50%;
@@ -6973,30 +6991,83 @@ footer p {
     box-shadow: 0px -10px 31px 10px rgba(0, 0, 0, 0.2);
   }
 }
-.map {
+.map--container {
+  margin-bottom: 100px;
+}
+.map--container:hover .map--get-directions {
+  display: block;
+  position: absolute;
+  top: 230px;
+  left: 43.5%;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+}
+.map--get-directions {
+  display: none;
+  z-index: 1050;
+}
+.map--image {
   background: url('../img/map.jpg') 0px -150px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-animation: fadein 4s;
+  /* Safari and Chrome */
+
+  -moz-animation: fadein 4s;
+  /* Firefox */
+
+  -ms-animation: fadein 4s;
+  /* Internet Explorer */
+
+  -o-animation: fadein 4s;
+  /* Opera */
+
+  animation: fadein 4s;
   width: 100%;
   height: 200px;
   margin-top: 50px;
 }
-.map:before {
-  content: "";
+.map--image:before {
+  content: '';
   display: block;
-  position: absolute;
+  position: relative;
+  width: 100%;
+  height: 200px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 255, 255, 0.5);
-  -moz-transition: background .3s linear;
-  -webkit-transition: background .3s linear;
-  -o-transition: background .3s linear;
-  transition: background .3s linear;
-}
-.map:hover:before {
   background: none;
+  -moz-transition: background content 0.5s ease;
+  -webkit-transition: background content 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+.map--image:hover:before {
+  background: rgba(0, 0, 0, 0.75);
+}
+.about--container {
+  display: none;
+}
+.philosophy--container {
+  display: none;
+}
+@media only screen and (min-width: 1224px) {
+  .philosophy--container {
+    display: block;
+    height: 600px;
+    width: 100%;
+    background-image: url('../img/philosophy-bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .about--container {
+    display: block;
+  }
 }

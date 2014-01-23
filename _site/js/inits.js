@@ -41,6 +41,5 @@ $( document ).ready(function() {
     $('#blog').show();
     $('#dir').show();
     $('#contact').show();
-    console.log("hey");
   }
 });

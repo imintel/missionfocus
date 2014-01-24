@@ -7096,8 +7096,16 @@ footer p {
   color: #ffffff;
   width: 500px;
   margin-left: 5%;
-  padding-top: 12%;
+  padding-top: 13%;
   font-size: 16px;
   font-family: "proxima-nova", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+.posts--intro {
+  text-align: center;
+  font-family: "ff-tisa-web-pro", serif;
+  font-size: 80%;
+  font-style: italic;
+  margin-top: 8%;
+  height: 50px;
 }

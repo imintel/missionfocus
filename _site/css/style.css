@@ -6789,7 +6789,7 @@ footer p {
 }
 @media only screen and (min-width: 1224px) {
   .index--header {
-    height: 800px;
+    height: 720px;
     background-image: url('../img/head_banner.jpg');
   }
 }
@@ -7059,7 +7059,8 @@ footer p {
 @media only screen and (min-width: 1224px) {
   .philosophy--container {
     display: block;
-    height: 600px;
+    position: relative;
+    height: 500px;
     width: 100%;
     background-image: url('../img/philosophy-bg.jpg');
     -webkit-background-size: cover;
@@ -7069,5 +7070,34 @@ footer p {
   }
   .about--container {
     display: block;
+    height: 300px;
   }
+}
+.about--callout {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 36px;
+  font-family: "proxima-nova", sans-serif;
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+
+  -moz-animation: fadein 2s;
+  /* Firefox */
+
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+
+  -o-animation: fadein 2s;
+  /* Opera */
+
+  animation: fadein 2s;
+}
+.philosophy--bodycopy {
+  color: #ffffff;
+  width: 500px;
+  margin-left: 5%;
+  padding-top: 12%;
+  font-size: 16px;
+  font-family: "proxima-nova", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }

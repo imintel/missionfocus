@@ -9,7 +9,8 @@
 @media only screen and (min-width : 1224px) {
   .philosophy--container {
     display: block;
-    height: 600px;
+    position: relative;
+    height: 500px;
     width: 100%;
     background-image: url('../img/philosophy-bg.jpg');
     -webkit-background-size: cover;
@@ -20,9 +21,24 @@
 
   .about--container {
     display: block;
+    height: 300px;
   }
 }
 
 .about--callout {
-  background-color: indianred;
+  margin-top: 70px;
+  text-align: center;
+  font-size: @hugeType;
+  font-family: @sansSerif;
+  .fadein(2s);
+}
+
+.philosophy--bodycopy {
+  color: @white;
+  width: 500px;
+  margin-left: 5%;
+  padding-top: 12%;
+  font-size: @mediumType;
+  font-family: @sansSerif;
+  -webkit-font-smoothing: antialiased;
 }

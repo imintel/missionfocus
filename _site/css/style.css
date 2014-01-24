@@ -6789,7 +6789,7 @@ footer p {
 }
 @media only screen and (min-width: 1224px) {
   .index--header {
-    height: 720px;
+    height: 550px;
     background-image: url('../img/head_banner.jpg');
   }
 }
@@ -6833,7 +6833,7 @@ footer p {
   .index--tagline {
     animation: movedown 1.1s ease;
     -webkit-animation: movedown 1.1s ease;
-    top: 350px;
+    top: 260px;
     opacity: 0.5;
   }
   @keyframes movedown {

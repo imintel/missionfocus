@@ -10,6 +10,10 @@ Push to master, pushes _site to gh-pages
 Master stays clean
 Work on separate branches for breaking chances to ensure stuff doesn't get messed up
 
-This repo holds the Mission Focus website jekyll and static files. Documentation on running the website can be found in ```DOCUMENTATION.md```. The website can be seen at [missionfocus.com](http://missionfocus.com).
+# Careers Section
+To advertise new positions open at Mision Focus, there are two things you should update: 
+
+-- main page
+-- careers section
 
 [Chrome Extension for Responsive Testing](https://chrome.google.com/webstore/detail/responsive-inspector/memcdolmmnmnleeiodllgpibdjlkbpim?hl=en)

@@ -42,4 +42,9 @@ $( document ).ready(function() {
     $('#dir').show();
     $('#contact').show();
   }
+
+  $('.philosophy--container').waypoint(function() {
+    $(this).addClass('philosophy--animation');
+    console.log('You have scrolled to a thing.');
+  }, { offset: "50%" });
 });

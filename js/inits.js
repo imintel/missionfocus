@@ -44,7 +44,8 @@ $( document ).ready(function() {
   }
 
   $('.philosophy--container').waypoint(function() {
+    $(this).show();
     $(this).addClass('philosophy--animation');
     console.log('You have scrolled to a thing.');
-  }, { offset: "50%" });
+  }, { offset: "99%" });
 });

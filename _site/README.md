@@ -16,4 +16,20 @@ To advertise new positions open at Mision Focus, there are two things you should
 -- main page
 -- careers section
 
+# Team Photos
+Team photos accompany each blog post. In order to associate the right photo with the blog post, in the top of the blog post the following YAML should be stated:
+
+```
+	---
+	layout: post
+	title: "D3: Multiple Brushes"
+	author: Meredith M. Myers
+	img: mmmyers.png
+	date: 2013-10-16 10:50
+	description: How to select multiple time ranges using D3 brushes.
+	---
+```
+
+Team photos should follow the proper naming convention of <em>first initial, middle initial, last name.png</em> like in the example above.
+
 [Chrome Extension for Responsive Testing](https://chrome.google.com/webstore/detail/responsive-inspector/memcdolmmnmnleeiodllgpibdjlkbpim?hl=en)

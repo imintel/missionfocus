@@ -6924,10 +6924,18 @@ footer p {
 .blog--read-on {
   font-family: "proxima-nova", sans-serif;
   font-size: 36px;
-  font-weight: ;
+  font-weight: 700;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   color: #33b5cc;
+  margin-left: 39%;
+}
+.posts--blog-title {
+  color: #4a4a4a;
+  font-weight: 700;
+}
+.posts--blog-title:hover {
+  text-decoration: none;
 }
 .posts svg {
   margin-top: 20px;
@@ -6943,13 +6951,6 @@ footer p {
 }
 .posts p {
   line-height: 150%;
-}
-.posts a {
-  color: #4a4a4a;
-  font-weight: 700;
-}
-.posts a:hover {
-  text-decoration: none;
 }
 .posts h2 {
   margin-bottom: -2px;

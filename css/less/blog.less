@@ -8,10 +8,19 @@
 .blog--read-on {
   font-family: @sansSerif;
   font-size: @hugeType;
-  font-weight: ;
+  font-weight: 700;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   color: @primary;
+  margin-left: 39%;
+}
+
+.posts--blog-title {
+  color: lighten(@grayDark, 9%);
+  font-weight: 700;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // Handles the ul of different posts on the page
@@ -30,13 +39,6 @@
   }
   p {
     line-height: 150%;
-  }
-  a {
-    color: lighten(@grayDark, 9%);
-    font-weight: 700;
-    &:hover {
-      text-decoration: none;
-    } 
   }
   h2 {
     margin-bottom: -2px;

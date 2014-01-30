@@ -6,6 +6,10 @@
   display: none;
 }
 
+.philosophy--bodycopy {
+  display: none;
+}
+
 @media only screen and (min-width : 1224px) {
   .philosophy--container {
     position: relative;
@@ -22,6 +26,17 @@
     display: block;
     height: 300px;
   }
+
+  .philosophy--bodycopy {
+    display: block;
+    color: @white;
+    width: 500px;
+    margin-left: 5%;
+    padding-top: 10%;
+    font-size: @largeType;
+    font-family: @sansSerif;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 .about--callout {
@@ -30,16 +45,6 @@
   font-size: @hugeType;
   font-family: @sansSerif;
   .fadein(2s);
-}
-
-.philosophy--bodycopy {
-  color: @white;
-  width: 500px;
-  margin-left: 5%;
-  padding-top: 10%;
-  font-size: @largeType;
-  font-family: @sansSerif;
-  -webkit-font-smoothing: antialiased;
 }
 
 // Separate so that we can append it at waypoint

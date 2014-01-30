@@ -6789,7 +6789,7 @@ footer p {
 }
 @media only screen and (min-width: 1224px) {
   .index--header {
-    height: 550px;
+    height: 850px;
     background-image: url('../img/head_banner.jpg');
   }
 }
@@ -6833,7 +6833,7 @@ footer p {
   .index--tagline {
     animation: movedown 1.1s ease;
     -webkit-animation: movedown 1.1s ease;
-    top: 260px;
+    top: 375px;
     opacity: 0.5;
   }
   @keyframes movedown {
@@ -7065,6 +7065,9 @@ footer p {
 .philosophy--container {
   display: none;
 }
+.philosophy--bodycopy {
+  display: none;
+}
 @media only screen and (min-width: 1224px) {
   .philosophy--container {
     position: relative;
@@ -7079,6 +7082,16 @@ footer p {
   .about--container {
     display: block;
     height: 300px;
+  }
+  .philosophy--bodycopy {
+    display: block;
+    color: #ffffff;
+    width: 500px;
+    margin-left: 5%;
+    padding-top: 10%;
+    font-size: 22px;
+    font-family: "proxima-nova", sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 }
 .about--callout {
@@ -7099,15 +7112,6 @@ footer p {
   /* Opera */
 
   animation: fadein 2s;
-}
-.philosophy--bodycopy {
-  color: #ffffff;
-  width: 500px;
-  margin-left: 5%;
-  padding-top: 10%;
-  font-size: 22px;
-  font-family: "proxima-nova", sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 .philosophy--animation {
   -webkit-animation: fadein 6s;
@@ -7131,4 +7135,52 @@ footer p {
   font-style: italic;
   margin-top: 8%;
   height: 50px;
+}
+.careers--container {
+  display: none;
+}
+.careers--work {
+  display: none;
+}
+.careers--benefits {
+  display: none;
+}
+.careers--open-positions {
+  display: none;
+}
+@media only screen and (min-width: 1224px) {
+  .careers--container {
+    display: block;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-image: url('../img/workfor.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 3%;
+  }
+  .careers--work {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 36px;
+    font-family: "proxima-nova", sans-serif;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    margin-top: 5%;
+    background-position: 0 0;
+  }
+  .careers--benefits {
+    display: block;
+  }
+  .careers--open-positions {
+    display: block;
+    font-size: 22px;
+    font-family: "proxima-nova", sans-serif;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+  }
 }

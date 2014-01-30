@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>
-    
+    How to Make an Icon Font
   </title>
   <meta name="viewport" content="width=device-width">
 
@@ -51,24 +51,51 @@
       </div>
 
       <!-- Page content -->
-      <div class="col-md-10 col-md-offset-1" style="padding: 0;">
+      <div class="col-md-2" style="padding: 0;">
 
-<h2></h2>
-<p class="meta">30 Jan 2014</p>
-
-<div class="post">
-  <svg version="1.1" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+  <!-- Commented out until I can make this more attractive -->
+  <!-- <svg version="1.1" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
     <g>
-      <clipPath id="circle">
-        <circle cx="150" cy="150" r="149.557"/> 
-      </clipPath>
-    </g>
+     <clipPath id="circle">
+      <circle cx="150" cy="150" r="149.557"/>
+     </clipPath>
+    </g> 
     
-    <image clip-path="url(#circle)" height="100%" width="100%" xlink:href="http://distilleryimage7.ak.instagram.com/5f3809ce287911e3800122000aeb0c37_8.jpg" />
-  </svg>
+    <image clip-path="url(#circle)" height="100%" width="100%" xlink:href="/img/team/hvholmes.png" />
+  </svg> -->
 
 </div>
+
+<div class="col-md-9 col-md-offset-1" style="padding: 0;">
+  <h1>How to Make an Icon Font</h1>
+  <h3>Helen V. Holmes</h3>
+  <h5>January 30, 2014</h5>
+    <h1>How to Make an Icon Font</h1>
+
+<p>Resources: Inkscape (free), GlyphsApp ($300)</p>
+
+<h2>Why an Icon Font?</h2>
+
+<p>All the benefits of fonts without the pitfalls of SVGs or images - infinitely scaleable, cross-browser compatible, and color is easily customizable. </p>
+
+<h2>Steps to Build an Icon Font (Inkscape)</h2>
+
+<ol>
+<li>Useful template for getting started: <a href="https://github.com/Heydon/Community-Icon-Font/blob/master/resources/inkscape_iconfont_canvas_template.svg">Community Icon Font Template</a></li>
+<li>Open the <strong>SVG Font Editor Pane</strong>. <strong>Add Glyph</strong> &gt; type in a letter your want it to correspond to.</li>
+<li>Import the SVG and align to baseline (blue line, which hands slightly below canvas). </li>
+<li>Ungroup vector and ensure Inkscape understands it as one glyph by going to <strong>Path &gt; Union</strong>. If <strong>Union</strong> isn&#39;t working, it&#39;s typically because groups still dxist in your shape.</li>
+<li>With vector selected, in the SVG Font Editor Pane: <strong>Get Curves from Selection</strong> with glyph you want it associated with selected.</li>
+<li>Continue steps 1-5 for all of the glyphs you want to add. For ensuring glyphs are the same size, I leave other glyphs out in the artspace to compare. Glyphs out in the artspace won&#39;t affect the end font file.</li>
+<li>Save the file as font-name.svg.</li>
+<li>Convert the svg file to a font file at a converter site, such as <a href="http://www.freefontconverter.com/">FreeFontConverter</a>.</li>
+<li>To generate an @font-face kit for the font for web use, use the generated font file at a site such as <a href="http://www.fontsquirrel.com/tools/webfont-generator">Font Squirrel</a>.</li>
+</ol>
+
+<p>Origin article: <a href="http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/">How to Make Your Own Icon Webfont</a></p>
+
 </div>
+
 
     </div><!-- page -->
   </div>

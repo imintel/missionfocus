@@ -7,7 +7,7 @@
  */
 
  .index--header {
-  background-image: url('../img/header_bg.jpg');
+  background-image: url('../img/index--header.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@
 @media only screen and (min-width : 1224px) {
  .index--header {
     height: 850px;
-    background-image: url('../img/head_banner.jpg');
+    background-image: url('../img/index--header-desktop.jpg');
  }
 }
 
@@ -45,8 +45,9 @@
 
 @media only screen and (min-width : 1224px) {
  .index--company-name {
-  top: 38%;
-    .fadein(2s)
+  top: 44%;
+  .fadein(2s);
+  color: @grayDarker;
  }
 }
 
@@ -64,8 +65,9 @@
   .index--tagline {
     animation: movedown 1.1s ease;
     -webkit-animation: movedown 1.1s ease;
-    top: 375px;
+    top: 415px;
     opacity: 0.5;
+    color: @grayDarker;
   }
 
   @keyframes movedown {

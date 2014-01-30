@@ -5,14 +5,24 @@
   margin-top: 5%;
 }
 
+.posts--intro {
+  display: none;
+}
+
+@media only screen and (min-width : 1224px) {
+  .posts--intro {
+    display: block;
+  }
+}
+
 .blog--read-on {
+  width: 100%;
+  display: block;
   font-family: @sansSerif;
   font-size: @hugeType;
-  font-weight: 700;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   color: @primary;
-  margin-left: 39%;
 }
 
 .posts--blog-title {

@@ -18,9 +18,10 @@
   .careers--container {
     display: block;
     position: relative;
-    height: 400px;
+    height: 600px;
     width: 100%;
-    background-image: url('../img/workfor.jpg');
+    background-image: url('../img/careers--bg.jpg');
+    background-position: 0 200px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -37,13 +38,7 @@
     color: @white;
     -webkit-font-smoothing: antialiased;
     text-align: center;
-    margin-top: 5%;
-    background-position: 0 0;
-  }
-
-  .careers--benefits {
-    display: block;
-
+    margin-top: 18%;
   }
 
   .careers--open-positions {
@@ -52,5 +47,13 @@
     font-family: @sansSerif;
     text-align: center;
     -webkit-font-smoothing: antialiased;
+    a {
+      color: @grayDarker;
+    }
   }
+}
+
+// Separate so that we can append it at waypoint
+.careers--animation {
+  .fadein(5s);
 }

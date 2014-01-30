@@ -46,6 +46,10 @@ $( document ).ready(function() {
   $('.philosophy--container').waypoint(function() {
     $(this).show();
     $(this).addClass('philosophy--animation');
-    console.log('You have scrolled to a thing.');
+  }, { offset: "99%" });
+
+  $('.careers--container').waypoint(function() {
+    $(this).show();
+    $(this).addClass('careers--animation');
   }, { offset: "99%" });
 });

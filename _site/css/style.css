@@ -7375,6 +7375,15 @@ footer p {
   margin-top: 8%;
   height: 50px;
 }
+.post--tagline {
+  font-size: 75%;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  margin-left: -115px;
+  top: 48%;
+  left: 50%;
+}
 .post--svg {
   position: absolute;
   height: 80px;
@@ -7389,11 +7398,29 @@ footer p {
   .post--svg {
     display: none;
   }
+  .post--tagline {
+    animation: movedown 1.1s ease;
+    -webkit-animation: movedown 1.1s ease;
+    top: 125px;
+    position: absolute;
+    opacity: 0.5;
+    color: #ffffff;
+    z-index: 1050;
+  }
 }
 @media only screen and (min-width: 700px) {
   .post--svg {
     top: 195px;
     left: 15%;
+  }
+  .post--tagline {
+    animation: movedown 1.1s ease;
+    -webkit-animation: movedown 1.1s ease;
+    top: 250px;
+    position: absolute;
+    opacity: 0.5;
+    color: #ffffff;
+    z-index: 1050;
   }
 }
 @media only screen and (min-width: 750px) {
@@ -7401,11 +7428,29 @@ footer p {
     top: 195px;
     left: 20%;
   }
+  .post--tagline {
+    animation: movedown 1.1s ease;
+    -webkit-animation: movedown 1.1s ease;
+    top: 250px;
+    position: absolute;
+    opacity: 0.5;
+    color: #ffffff;
+    z-index: 1050;
+  }
 }
 @media only screen and (min-width: 960px) {
   .post--svg {
     top: 195px;
     left: 25%;
+  }
+  .post--tagline {
+    animation: movedown 1.1s ease;
+    -webkit-animation: movedown 1.1s ease;
+    top: 250px;
+    position: absolute;
+    opacity: 0.5;
+    color: #ffffff;
+    z-index: 1050;
   }
 }
 @media only screen and (min-width: 1224px) {
@@ -7416,7 +7461,8 @@ footer p {
   .post--tagline {
     animation: movedown 1.1s ease;
     -webkit-animation: movedown 1.1s ease;
-    top: 240px;
+    top: 200px;
+    position: absolute;
     opacity: 0.5;
     color: #ffffff;
     z-index: 1050;
@@ -7543,15 +7589,6 @@ footer p {
     animation: fadein 2s;
     color: #ffffff;
   }
-}
-.post--tagline {
-  font-size: 75%;
-  color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  position: absolute;
-  margin-left: -115px;
-  top: 48%;
-  left: 50%;
 }
 @media only screen and (min-width: 1224px) {
   .post--tagline {

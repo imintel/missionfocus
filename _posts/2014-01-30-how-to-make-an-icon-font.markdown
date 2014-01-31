@@ -5,6 +5,7 @@ author: Helen V. Holmes
 img: hvholmes.png
 date: 2014-01-30 14:13
 description: Better than CSS sprite sheets by far.
+header: post--iconfont.jpg
 ---
 
 # How to Make an Icon Font

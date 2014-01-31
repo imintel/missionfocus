@@ -40,37 +40,14 @@
       <a href="#slidemenupanel"><div class="nav--logo" id="slidemenu" ></div></a>
 
       <!-- Header -->
-      <div class="index--header" data-speed="8" data-type="background">
-        <div class="index--company-name">Mission Focus</div>
-        <p class="index--tagline">Large-scale solutions for today's warfighter</p>
-        <section class="nav--index-header">
-          <a href="/index.html#blog" class="nav--index-header-anchors active">Blog</a>
-          <a href="/index.html#dir" class="nav--index-header-anchors">Directions</a>
-          <a href="/index.html#contact" class="nav--index-header-anchors">Contact</a>
-        </section>
+      <div class="subpages--header" data-speed="8" data-type="background">
+        <img src="/img/posts/" />
+        <div class="subpages--company-name">Mission Focus</div>
+        <p class="subpages--tagline">Large-scale solutions for today's warfighter</p>
       </div>
 
       <!-- Page content -->
-      <div class="col-md-2" style="padding: 0;">
-
-  <!-- Commented out until I can make this more attractive -->
-  <!-- <svg version="1.1" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-    <g>
-     <clipPath id="circle">
-      <circle cx="150" cy="150" r="149.557"/>
-     </clipPath>
-    </g> 
-    
-    <image clip-path="url(#circle)" height="100%" width="100%" xlink:href="/img/team/mmmyers.png" />
-  </svg> -->
-
-</div>
-
-<div class="col-md-9 col-md-offset-1" style="padding: 0;">
-  <h1>D3: Multiple Brushes</h1>
-  <h3>Meredith M. Myers</h3>
-  <h5>October 16, 2013</h5>
-    <p>One of the useful features <a href="http://d3js.org/">D3</a> offers is a <a href="https://github.com/mbostock/d3/wiki/SVG-Controls">dynamic brush</a> that allows one to select a portion of a scale. If desired, SVG elements within the &quot;brushed&quot; range of the can then be manipulated. For an in-house project, we wanted to select multiple time ranges using brushes. </p>
+      <p>One of the useful features <a href="http://d3js.org/">D3</a> offers is a <a href="https://github.com/mbostock/d3/wiki/SVG-Controls">dynamic brush</a> that allows one to select a portion of a scale. If desired, SVG elements within the &quot;brushed&quot; range of the can then be manipulated. For an in-house project, we wanted to select multiple time ranges using brushes. </p>
 
 <p>This great <a href="http://bl.ocks.org/mbostock/1667367">example</a> from D3&#39;s creator made implementing one brush simple (if you haven&#39;t previously implemented a singular brush, you&#39;ll probably want to give the example a look before continuing). However, when we tried to add another brush to the display the brushes weren&#39;t usable, and there didn&#39;t seem to be any D3 documentation about how to achieve the  functionality. There also didn&#39;t seem to be any other examples online with more than one brush. Since it was a feature we needed, we experimented. In the end, by making two simple DOM alterations to the brushes, we were able to create multiple brushes on the same scale. </p>
 
@@ -87,8 +64,6 @@
 <p>You can see a working example below:</p>
 
 <p><a href="../../assets/d3-multiple-brushes/index.html">D3 Multiple Brushes Example</a></p>
-
-</div>
 
 
     </div><!-- page -->

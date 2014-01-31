@@ -22,14 +22,13 @@
   <body>
     <div data-role="page">
 
-      <div id="slidemenupanel" data-role="panel" data-position="left" data-display="push">
+      <div id="subpagesslidemenupanel" data-role="panel" data-position="left" data-display="push">
         <ul>
           <a href="/index.html#blog"><li>Home</li></a>
           <a href="/index.html#blog"><li>Blog</li></a>
-          <a href="/index.html#dir"><li>Directions</li></a>
+          <a href="/index.html#dir" class="desktop--none"><li>Directions</li></a>
           <a href="/index.html#contact"><li>Contact Us</li></a>
           <a href="/careers.html"><li>Careers</li></a>
-          <a href="/open-source.html"><li>Open Source</li></a>
           <a href="/press.html"><li>Press</li></a>
         </ul>
       </div>
@@ -37,21 +36,17 @@
     <!-- Jquery Mobile wrapper -->
     <div data-role="content">
       <!-- Mobile navigation -->
-      <a href="#slidemenupanel"><div class="nav--logo" id="slidemenu" ></div></a>
+      <a href="#subpagesslidemenupanel"><div class="nav--logo" id="slidemenu" ></div></a>
 
       <!-- Header -->
-      <div class="index--header" data-speed="8" data-type="background">
-        <div class="index--company-name">Mission Focus</div>
-        <p class="index--tagline">Large-scale solutions for today's warfighter</p>
-        <section class="nav--index-header">
-          <a href="/index.html#blog" class="nav--index-header-anchors active">Blog</a>
-          <a href="/index.html#dir" class="nav--index-header-anchors">Directions</a>
-          <a href="/index.html#contact" class="nav--index-header-anchors">Contact</a>
-        </section>
+      <div class="subpages--header" data-speed="8" data-type="background">
+        <div class="subpages--company-name">Mission Focus</div>
+        <p class="subpages--tagline">Large-scale solutions for today's warfighter</p>
       </div>
 
       <!-- Page content -->
-       <a><h2>Open Positions</h2></a>
+      <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+ <a><h2>Open Positions</h2></a>
 
   <table>
 
@@ -68,6 +63,7 @@
     </tbody>
 
   </table>
+</div>
 
     </div><!-- page -->
   </div>

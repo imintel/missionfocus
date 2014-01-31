@@ -6780,7 +6780,7 @@ footer p {
  *
  */
 .index--header {
-  background-image: url('../img/index--header.jpg');
+  background-image: url('../img/index--header-desktop.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -6797,7 +6797,7 @@ footer p {
   }
 }
 .index--company-name {
-  color: #ffffff;
+  color: #222222;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -6842,7 +6842,7 @@ footer p {
 }
 .index--tagline {
   font-size: 75%;
-  color: #ffffff;
+  color: #222222;
   -webkit-font-smoothing: antialiased;
   position: absolute;
   margin-left: -115px;
@@ -6877,7 +6877,7 @@ footer p {
   }
 }
 .index--header a {
-  color: #ffffff;
+  color: #222222;
 }
 .index--header a:hover {
   text-decoration: none;
@@ -6903,7 +6903,7 @@ footer p {
   }
 }
 .nav--index-header-anchors {
-  color: #ffffff;
+  color: #222222;
   opacity: 0.6;
   text-transform: uppercase;
   font-weight: 700;
@@ -6912,7 +6912,7 @@ footer p {
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-family: "jaf-bernino-sans", "proxima-nova", sans-serif;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #222222;
   display: block;
   padding: 2px;
   width: 33.333333333333336%;
@@ -6940,7 +6940,7 @@ footer p {
   }
 }
 .subpages--header {
-  background-image: url('../img/index--header.jpg');
+  background-image: url('../img/index--header-desktop.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -6957,7 +6957,7 @@ footer p {
   }
 }
 .subpages--company-name {
-  color: #ffffff;
+  color: #222222;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -7002,7 +7002,7 @@ footer p {
 }
 .subpages--tagline {
   font-size: 75%;
-  color: #ffffff;
+  color: #222222;
   -webkit-font-smoothing: antialiased;
   position: absolute;
   margin-left: -115px;
@@ -7712,7 +7712,15 @@ footer p {
   font-family: "proxima-nova", sans-serif;
   font-size: 22px;
   display: block;
-  width: 50%;
-  margin: auto;
   text-align: justify;
+}
+@media only screen and (min-width: 1224px) {
+  .contact--sub-press {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 22px;
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+  }
 }

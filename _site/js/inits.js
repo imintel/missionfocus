@@ -41,6 +41,22 @@ $( document ).ready(function() {
     $('#blog').show();
     $('#dir').show();
     $('#contact').show();
+    $('.desktop--none').hide();
+    ($('.ui-panel-inner a')).click(function(){
+      var href = $(this).prop('hash');
+      if (typeof attr !== 'undefined' && attr !== false) {
+          // Just load page normally
+      } 
+      else {
+        $('#blog').show();
+        $('#dir').show();
+        $('#contact').show();
+        $( '#slidemenupanel' ).panel( 'close' );
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        }, 800);
+      }
+    });
   }
 
   $('.philosophy--container').waypoint(function() {

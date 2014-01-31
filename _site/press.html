@@ -22,14 +22,13 @@
   <body>
     <div data-role="page">
 
-      <div id="slidemenupanel" data-role="panel" data-position="left" data-display="push">
+      <div id="subpagesslidemenupanel" data-role="panel" data-position="left" data-display="push">
         <ul>
           <a href="/index.html#blog"><li>Home</li></a>
           <a href="/index.html#blog"><li>Blog</li></a>
-          <a href="/index.html#dir"><li>Directions</li></a>
+          <a href="/index.html#dir" class="desktop--none"><li>Directions</li></a>
           <a href="/index.html#contact"><li>Contact Us</li></a>
           <a href="/careers.html"><li>Careers</li></a>
-          <a href="/open-source.html"><li>Open Source</li></a>
           <a href="/press.html"><li>Press</li></a>
         </ul>
       </div>
@@ -37,21 +36,16 @@
     <!-- Jquery Mobile wrapper -->
     <div data-role="content">
       <!-- Mobile navigation -->
-      <a href="#slidemenupanel"><div class="nav--logo" id="slidemenu" ></div></a>
+      <a href="#subpagesslidemenupanel"><div class="nav--logo" id="slidemenu" ></div></a>
 
       <!-- Header -->
-      <div class="index--header" data-speed="8" data-type="background">
-        <div class="index--company-name">Mission Focus</div>
-        <p class="index--tagline">Large-scale solutions for today's warfighter</p>
-        <section class="nav--index-header">
-          <a href="/index.html#blog" class="nav--index-header-anchors active">Blog</a>
-          <a href="/index.html#dir" class="nav--index-header-anchors">Directions</a>
-          <a href="/index.html#contact" class="nav--index-header-anchors">Contact</a>
-        </section>
+      <div class="subpages--header" data-speed="8" data-type="background">
+        <div class="subpages--company-name">Mission Focus</div>
+        <p class="subpages--tagline">Large-scale solutions for today's warfighter</p>
       </div>
 
       <!-- Page content -->
-      <div class="col-md-10 col-md-offset-1" style="padding: 0;">
+      <div class="col-md-10 col-md-offset-1">
 
 <h1 class="page-title">Brand Assets and Guidelines</h1>
 
@@ -172,6 +166,8 @@
     </ul>
 
   <p>By using the Mission Focus marks you agree to follow this policy as well as our Terms of Service and all Twitter rules and policies. Mission Focus reserves the right to cancel, modify, or change the permission in this policy at any time at its sole discretion. For further information about use of the Mission Focus name and trademarks, please contact us at <strong>missionfocus.com</strong>.</p>
+
+  <div class="dir--desktop"><a href="https://goo.gl/maps/7Wegk">100 Daingerfield Road, Suite 400, Alexandria, VA 22314</a> <em>|</em> Phone: 703.291.6720 <em>|</em> Fax: 703.763.726</div>
 
 </div>
 

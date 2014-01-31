@@ -22,14 +22,13 @@
   <body>
     <div data-role="page">
 
-      <div id="slidemenupanel" data-role="panel" data-position="left" data-display="push">
+      <div id="subpagesslidemenupanel" data-role="panel" data-position="left" data-display="push">
         <ul>
           <a href="/index.html#blog"><li>Home</li></a>
           <a href="/index.html#blog"><li>Blog</li></a>
-          <a href="/index.html#dir"><li>Directions</li></a>
+          <a href="/index.html#dir" class="desktop--none"><li>Directions</li></a>
           <a href="/index.html#contact"><li>Contact Us</li></a>
           <a href="/careers.html"><li>Careers</li></a>
-          <a href="/open-source.html"><li>Open Source</li></a>
           <a href="/press.html"><li>Press</li></a>
         </ul>
       </div>
@@ -37,17 +36,12 @@
     <!-- Jquery Mobile wrapper -->
     <div data-role="content">
       <!-- Mobile navigation -->
-      <a href="#slidemenupanel"><div class="nav--logo" id="slidemenu" ></div></a>
+      <a href="#subpagesslidemenupanel"><div class="nav--logo" id="slidemenu" ></div></a>
 
       <!-- Header -->
-      <div class="index--header" data-speed="8" data-type="background">
-        <div class="index--company-name">Mission Focus</div>
-        <p class="index--tagline">Large-scale solutions for today's warfighter</p>
-        <section class="nav--index-header">
-          <a href="/index.html#blog" class="nav--index-header-anchors active">Blog</a>
-          <a href="/index.html#dir" class="nav--index-header-anchors">Directions</a>
-          <a href="/index.html#contact" class="nav--index-header-anchors">Contact</a>
-        </section>
+      <div class="subpages--header" data-speed="8" data-type="background">
+        <div class="subpages--company-name">Mission Focus</div>
+        <p class="subpages--tagline">Large-scale solutions for today's warfighter</p>
       </div>
 
       <!-- Page content -->
@@ -144,6 +138,8 @@
 <p>
     MissionFocus is an agile development shop that takes domain design and development as seriously as system design and development. We work mostly in the Intelligence arena with DoD and IC customers in close partnership with the Institute for Modern Intelligence. Our core domain is the storage, processing, and utilization of data in the context of immense scale and diversity. We are experts in cloud compute and storage technology and invented the Sign Representation Framework which underpins a game-changing approach to data unification. We pride ourselves on our disciplined engineering practices and distinguish ourselves by our ability to continually learn and innovate. The work we do is meaningful and intentional and is wrapped with our integrity. We are driven to think harder and work better than the rest because we believe the code we are writing will change the world!
 </p>
+
+<div class="dir--desktop"><a href="https://goo.gl/maps/7Wegk">100 Daingerfield Road, Suite 400, Alexandria, VA 22314</a> <em>|</em> Phone: 703.291.6720 <em>|</em> Fax: 703.763.726</div>
 
 </div>
 

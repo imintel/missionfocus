@@ -7552,13 +7552,16 @@ footer p {
   
     animation: fadein 2s;
     color: #ffffff;
+    width: 300px;
+    margin-left: -150px;
   }
 }
 @media only screen and (min-width: 1224px) {
   .post--company-name {
     top: 200px;
     left: 50%;
-    margin-left: -150px;
+    width: 500px;
+    margin-left: -250px;
     /* Safari and Chrome */
   
     /* Firefox */

@@ -5,11 +5,10 @@ author: Helen V. Holmes
 img: hvholmes.png
 date: 2014-01-30 14:13
 description: Better than CSS sprite sheets by far.
-header: post--iconfonts.jpg
+header: post--javacv.jpg
 ---
 
-# How to Make an Icon Font
-Resources: Inkscape (free), GlyphsApp ($300)
+If you've ever had to deal with sprite sheet you'll understand why icon fonts are infinitely preferable - no need to constantly fiddle with ```background-position```s. 
 
 ## Why an Icon Font?
 All the benefits of fonts without the pitfalls of SVGs or images - infinitely scaleable, cross-browser compatible, and color is easily customizable. 
@@ -24,5 +23,7 @@ All the benefits of fonts without the pitfalls of SVGs or images - infinitely sc
 7. Save the file as font-name.svg.
 8. Convert the svg file to a font file at a converter site, such as [FreeFontConverter](http://www.freefontconverter.com/).
 9. To generate an @font-face kit for the font for web use, use the generated font file at a site such as [Font Squirrel](http://www.fontsquirrel.com/tools/webfont-generator).
+
+Resources: Inkscape (free), GlyphsApp ($300)
 
 Origin article: [How to Make Your Own Icon Webfont](http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/)

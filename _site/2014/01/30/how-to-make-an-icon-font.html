@@ -59,29 +59,23 @@
         
         <div class="post--container">
       <!-- Page content -->
-      <p>If you&#39;ve ever had to deal with sprite sheet you&#39;ll understand why icon fonts are infinitely preferable - no need to constantly fiddle with <code>background-position</code>s. </p>
+      <p>If you&#39;ve ever had to deal with sprite sheet you&#39;ll understand why icon fonts are infinitely preferable - no need to constantly fiddle with <code>background-position</code>s. Icon fonts also give us all the benefits of fonts - infinitely scaleable, cross-browser compatibility, ability to easy swap out colors - without having to deal with the pitfalls of SVGs or images (cross-browser compabiity issues and dozens of small files).</p>
 
-<h2>Why an Icon Font?</h2>
+<p>Building a font is relatively simple. If you&#39;re on a Mac you can download <a href="http://www.inkscape.org/en/">Inkscape</a> for free or use <a href="http://www.glyphsapp.com/">GlyphsApp</a>, which is $300.</p>
 
-<p>All the benefits of fonts without the pitfalls of SVGs or images - infinitely scaleable, cross-browser compatible, and color is easily customizable. </p>
-
-<h2>Steps to Build an Icon Font (Inkscape)</h2>
+<p>To get started:
+1. <a href="https://github.com/Heydon/Community-Icon-Font/blob/master/resources/inkscape_iconfont_canvas_template.svg">Community Icon Font Template</a></p>
 
 <ol>
-<li>Useful template for getting started: <a href="https://github.com/Heydon/Community-Icon-Font/blob/master/resources/inkscape_iconfont_canvas_template.svg">Community Icon Font Template</a></li>
-<li>Open the <strong>SVG Font Editor Pane</strong>. <strong>Add Glyph</strong> &gt; type in a letter your want it to correspond to.</li>
-<li>Import the SVG and align to baseline (blue line, which hands slightly below canvas). </li>
-<li>Ungroup vector and ensure Inkscape understands it as one glyph by going to <strong>Path &gt; Union</strong>. If <strong>Union</strong> isn&#39;t working, it&#39;s typically because groups still dxist in your shape.</li>
-<li>With vector selected, in the SVG Font Editor Pane: <strong>Get Curves from Selection</strong> with glyph you want it associated with selected.</li>
-<li>Continue steps 1-5 for all of the glyphs you want to add. For ensuring glyphs are the same size, I leave other glyphs out in the artspace to compare. Glyphs out in the artspace won&#39;t affect the end font file.</li>
-<li>Save the file as font-name.svg.</li>
-<li>Convert the svg file to a font file at a converter site, such as <a href="http://www.freefontconverter.com/">FreeFontConverter</a>.</li>
-<li>To generate an @font-face kit for the font for web use, use the generated font file at a site such as <a href="http://www.fontsquirrel.com/tools/webfont-generator">Font Squirrel</a>.</li>
+<li><p>Open the <strong>SVG Font Editor Pane</strong> in Inkscape. <strong>Add Glyph</strong> and then type in a letter your want it to correspond to.</p></li>
+<li><p>Import the SVG and align to baseline (blue line, which hands slightly below canvas). </p></li>
+<li><p>Ungroup vector and ensure Inkscape understands it as one glyph by going to <strong>Path &gt; Union</strong>. If <strong>Union</strong> isn&#39;t working, it&#39;s typically because groups still exist in your shape.</p></li>
+<li><p>With vector selected, in the SVG Font Editor Pane: <strong>Get Curves from Selection</strong> with glyph you want it associated with selected.</p></li>
+<li><p>Continue steps 1-5 for all of the glyphs you want to add. For ensuring glyphs are the same size, I leave other glyphs out in the artspace to compare. Glyphs out in the artspace won&#39;t affect the end font file.</p></li>
+<li><p>Save the file as font-name.svg.</p></li>
+<li><p>Convert the svg file to a font file at a converter site, such as <a href="http://www.freefontconverter.com/">FreeFontConverter</a>.</p></li>
+<li><p>To generate an @font-face kit for the font for web use, use the generated font file at a site such as <a href="http://www.fontsquirrel.com/tools/webfont-generator">Font Squirrel</a>.</p></li>
 </ol>
-
-<p>Resources: Inkscape (free), GlyphsApp ($300)</p>
-
-<p>Origin article: <a href="http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/">How to Make Your Own Icon Webfont</a></p>
 
 
     </div><!-- page -->

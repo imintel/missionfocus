@@ -5,6 +5,7 @@ author: Andrew M. Eick
 img: maeick.png
 date: 2013-04-01 10:44
 description: Mission Focus to sponsor hackathon in Baltimore.
+header: post--javacv.jpg
 ---
 Mission Focus is a sponsor for [Reinvent Transit][rt], a gathering and “hackathon” that brings together technologists, makers, and creative problem solvers to better all forms of transportation in Baltimore. The event will run from Friday April 5th through Sunday April 7th at Betamore, the recently-opened urban campus for technology and entrepreneurship located in Federal Hill.
 

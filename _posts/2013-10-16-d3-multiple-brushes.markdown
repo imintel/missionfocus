@@ -5,6 +5,7 @@ author: Meredith M. Myers
 img: mmmyers.png
 date: 2013-10-16 10:50
 description: How to select multiple time ranges using D3 brushes.
+header: post--d3.jpg
 ---
 
 One of the useful features [D3](http://d3js.org/) offers is a [dynamic brush](https://github.com/mbostock/d3/wiki/SVG-Controls) that allows one to select a portion of a scale. If desired, SVG elements within the "brushed" range of the can then be manipulated. For an in-house project, we wanted to select multiple time ranges using brushes. 
